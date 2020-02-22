@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ssm.blog.dao.UserDao">
+
+	<!--优化等级const-->
+	<select id="FindByEmail" parameterType="String" resultType="ssm.blog.entity.User">
+		SELECT * FROM t_user WHERE email=#{email}
+	</select>
+
+
+	<insert id="addUser" parameterType="User">
+		INSERT INTO t_user VALUES(null,null,#{email},#{password})
+	</insert>
+
+</mapper> 
