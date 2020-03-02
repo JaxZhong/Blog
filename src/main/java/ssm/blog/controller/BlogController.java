@@ -91,7 +91,7 @@ public class BlogController {
 	// 根据关键字全局检索博客信息
 	@RequestMapping("/search")
 	public ModelAndView search(
-			@RequestParam(value = "q", required = false) String q,
+			@RequestParam(value = "q", required = false) String q,	//q为查询的内容
 			@RequestParam(value = "page", required = false) String page,
 			HttpServletRequest request) throws Exception {//此处request作为形参作用是获取容器位置，看104行request.getServletContext().getContextPath()，即jsp里的${pageContext.request.contextPath}作用
 
