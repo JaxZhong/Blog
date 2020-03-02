@@ -44,7 +44,7 @@
                 </c:if>
                 <c:if test="${CurrentUser!=null }">
                     <ul class="nav navbar-nav navbar-right">
-                        <p class="navbar-text" id="user">您好，${CurrentUser.email}&nbsp;&nbsp;</p>
+                        <p class="navbar-text" id="user">${CurrentUser.email}&nbsp;&nbsp;</p>
                         <button type="button" class="btn btn-default navbar-btn" onclick="loginOut()"></a>注销</button>
                     </ul>
                 </c:if>
