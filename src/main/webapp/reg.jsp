@@ -22,7 +22,7 @@ body {
 }
 
 .top_div {
-	background: #008ead;
+	background: #5fb877;
 	width: 100%;
 	height: 400px;
 }
@@ -42,6 +42,20 @@ body {
 	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
 }
 
+.ipt2 {
+	border: 1px solid #d3d3d3;
+	padding: 10px 10px;
+	width: 230px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow
+	ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out
+	.15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
 .ipt:focus {
 	border-color: #66afe9;
 	outline: 0;
@@ -57,7 +71,7 @@ body {
 		no-repeat;
 	padding: 10px 10px;
 	position: absolute;
-	top: 43px;
+	top: 30px;
 	left: 40px;
 }
 
@@ -272,7 +286,7 @@ a {
 				<div class="initial_left_hand" id="left_hand"></div>
 				<div class="initial_right_hand" id="right_hand"></div>
 			</div>
-			<p style="padding: 30px 0px 10px; position: relative;">
+			<p style="padding: 15px 0px 5px; position: relative;">
 				<span class="u_logo"></span>
 				<input id="email" name="email" class="ipt" type="text"
 					placeholder="请输入邮箱" value="${user.email }">
@@ -283,24 +297,24 @@ a {
 					placeholder="请设置密码：必须为6-21位非纯数字或纯英文" value="${user.password }">
 			</p>
             <div>
-                <input id="verCode" name="verCode" type="text"
+                <input id="verCode" name="verCode" class="ipt2" type="text"
                        placeholder="验证码" value="${verCode}">
-                <button class="btn btn-primary" type="button" onclick="sendCode()">发送验证码</button>
+                <button class="btn btn-primary" style="background: #009687; margin-top: 8px; padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;"
+						type="button" onclick="sendCode()">发送验证码</button>
             </div>
-			<div
-				style="height: 50px; line-height: 50px; margin-top: 30px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">
-				<p style="margin: 0px 35px 20px 45px;">
-					<span style="float: left;">Jax的博客系统</span>
+			<div style="height: 50px; line-height: 50px; margin-top: 15px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">
+				<p style="margin: 2px 10px 20px 15px;">
+					<span style="float: left;"><a href="${pageContext.request.contextPath}/index.html">Jax的博客系统</a></span>
 					<span><font color="red" id="error">${errorInfo }</font></span>
 					<span
 							style="float: right;">
 						<input type="submit"
-							   style="background: rgb(0, 142, 173); padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;"
+							   style="background: #009687; margin-top: 8px; padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;"
 							   value="注册" />
 					</span>
 					<span style="float: right;">
 						<a href="${pageContext.request.contextPath}/user/goLogin.html"
-						   style="background: rgb(0, 142, 173); padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;"
+						   style="background: #009687; margin-right: 5px; padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;"
 						>去登录</a>
 					</span>
 				</p>

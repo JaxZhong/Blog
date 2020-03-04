@@ -26,6 +26,8 @@
 .data_list .data_list_title img{
 	margin-top: 3px;
 	vertical-align: top;
+	width: 16px;
+	height: 16px;
 }
 
 .data_list .datas ul {

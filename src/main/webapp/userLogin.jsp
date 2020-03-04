@@ -7,7 +7,7 @@
 <title>ssm博客系统</title>
 <script
 	src="${pageContext.request.contextPath}/static/bootstrap3/js/jquery-1.11.2.min.js"></script>
-<STYLE>
+<style>
 body {
 	background: #ebebeb;
 	font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei",
@@ -22,7 +22,7 @@ body {
 }
 
 .top_div {
-	background: #008ead;
+	background: #5fb877;
 	width: 100%;
 	height: 400px;
 }
@@ -155,9 +155,9 @@ a {
 	top: -21px;
 	left: 210px;
 }
-</STYLE>
+</style>
 
-<SCRIPT type="text/javascript">
+<script type="text/javascript">
 	$(function() {
 		//得到焦点
 		$("#password").focus(function() {
@@ -208,50 +208,47 @@ a {
 		}
 		return true;
 	};
-</SCRIPT>
+</script>
 </head>
 <body>
-	<DIV class="top_div"></DIV>
+	<div class="top_div"></div>
 	<form action="${pageContext.request.contextPath}/user/login.do"
 		method="post" onsubmit="return checkForm()">
-		<DIV
+		<div
 			style="background: rgb(255, 255, 255); margin: -100px auto auto; border: 1px solid rgb(231, 231, 231); border-image: none; width: 400px; height: 200px; text-align: center;">
-			<DIV style="width: 165px; height: 96px; position: absolute;">
-				<DIV class="tou"></DIV>
-				<DIV class="initial_left_hand" id="left_hand"></DIV>
-				<DIV class="initial_right_hand" id="right_hand"></DIV>
-			</DIV>
-			<P style="padding: 30px 0px 10px; position: relative;">
-				<SPAN class="u_logo"></SPAN>
-				<INPUT id="email" name="email" class="ipt" type="text"
+			<div style="width: 165px; height: 96px; position: absolute;">
+				<div class="tou"></div>
+				<div class="initial_left_hand" id="left_hand"></div>
+				<div class="initial_right_hand" id="right_hand"></div>
+			</div>
+			<p style="padding: 30px 0px 10px; position: relative;">
+				<span class="u_logo"></span>
+				<input id="email" name="email" class="ipt" type="text"
 					placeholder="请输入邮箱" value="${user.email }">
-			</P>
-			<P style="position: relative;">
-				<SPAN class="p_logo"></SPAN>
-				<INPUT id="password" name="password" class="ipt" type="password"
+			</p>
+			<p style="position: relative;">
+				<span class="p_logo"></span>
+				<input id="password" name="password" class="ipt" type="password"
 					placeholder="请输入密码，密码为6-21位非纯数字或纯英文" value="${user.password }">
-			</P>
-			<DIV
-				style="height: 50px; line-height: 50px; margin-top: 30px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">
-				<P style="margin: 0px 35px 20px 45px;">
-					<SPAN style="float: left;">Jax的SSM博客系统</SPAN>
+			</p>
+			<div style="height: 50px; line-height: 50px; margin-top: 30px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">
+				<p style="margin: 2px 10px 20px 15px;">
+					<span style="float: left;"><a href="${pageContext.request.contextPath}/index.html">Jax的博客系统</a></span>
 					<span><font color="red" id="error">${errorInfo }</font></span>
-					<SPAN
+					<span
 						style="float: right;">
 						<input type="submit"
-						style="background: rgb(0, 142, 173); padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;"
+						style="background: #009687; margin-top: 8px; padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;"
 						value="登录" />
-					</SPAN>
-					<SPAN style="float: right;">
+					</span>
+					<span style="float: right;">
 						<a href="${pageContext.request.contextPath}/user/goReg.html"
-						   style="background: rgb(0, 142, 173); padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;"
+						   style="background: #009687; margin-right: 5px; padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;"
 						>去注册</a>
-					</SPAN>
-				</P>
-			</DIV>
-		</DIV>
+					</span>
+				</p>
+			</div>
+		</div>
 	</form>
-	<div style="text-align:center;padding-top: 30px">Copyright ©
-		2018-2019 SSM个人博客系统  版权所有 >_<</div>
 </body>
 </html>

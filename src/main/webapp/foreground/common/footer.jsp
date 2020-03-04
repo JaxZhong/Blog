@@ -3,7 +3,7 @@
 
 <div class="col-md-12" >
 	<div class="footer" align="center" style="padding-top: 120px" >
-		<font>Copyright © 2018-2019 Jax的SSM个人博客系统 版权所有</font>
+		<font>Copyright © 2019-2020 Jax的个人博客系统 版权所有</font>
 		  
 	</div>
 </div>			
