@@ -28,9 +28,9 @@ public class MailUtil {
             mMessageHelper=new MimeMessageHelper(mMessage,true);
             mMessageHelper.setFrom(emailFrom);
             mMessageHelper.setTo(email);//收件人邮箱
-            mMessageHelper.setSubject("Jax的博客网站注册");//邮件的主题
+            mMessageHelper.setSubject("钟智强的博客网站注册");//邮件的主题
             mMessageHelper.setText("<p>您的注册验证为" + code + "</p><br/>" +
-                    "<a href='https://www.xzhi.club/Blog'>打开Jax博客主页</a><br/>",true);//邮件的文本内容，true表示文本以html格式打开
+                    "<a href='https://www.xzhi.club/Blog'>打开钟智强博客主页</a><br/>",true);//邮件的文本内容，true表示文本以html格式打开
 //            File file=new File("F:/img/枫叶.png");//在邮件中添加一张图片
 //            FileSystemResource resource=new FileSystemResource(file);
 //            mMessageHelper.addInline("fengye", resource);//这里指定一个id,在上面引用

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>ssm博客系统</title>
+<title>注册博客系统</title>
 <script
 	src="${pageContext.request.contextPath}/static/bootstrap3/js/jquery-1.11.2.min.js"></script>
 <style>
@@ -304,7 +304,7 @@ a {
             </div>
 			<div style="height: 50px; line-height: 50px; margin-top: 15px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">
 				<p style="margin: 2px 10px 20px 15px;">
-					<span style="float: left;"><a href="${pageContext.request.contextPath}/index.html">Jax的博客系统</a></span>
+					<span style="float: left;"><a href="${pageContext.request.contextPath}/index.html">钟智强的博客系统</a></span>
 					<span><font color="red" id="error">${errorInfo }</font></span>
 					<span
 							style="float: right;">

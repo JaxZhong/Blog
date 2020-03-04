@@ -6,6 +6,9 @@
 .container {
 	width: 1400px;
 }
+.container-fluid{
+	background-color: #ffffff;
+}
 
 .data_list{
 	border: 1px solid #E5E5E5;

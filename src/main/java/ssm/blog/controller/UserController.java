@@ -118,9 +118,9 @@ public class UserController {
             mMessageHelper=new MimeMessageHelper(mMessage,true);
             mMessageHelper.setFrom("1076481671@qq.com");
             mMessageHelper.setTo(email);//收件人邮箱
-            mMessageHelper.setSubject("Jax的博客网站注册");//邮件的主题
+            mMessageHelper.setSubject("钟智强的博客网站注册");//邮件的主题
             mMessageHelper.setText("<p>您的注册验证码为：" + code + "，有效时间为10分钟</p><br/>" +
-                    "<a href='http://www.xzhi.club/Blog'>打开Jax博客主页</a><br/>",true);//邮件的文本内容，true表示文本以html格式打开
+                    "<a href='http://www.xzhi.club/Blog'>打开钟智强博客主页</a><br/>",true);//邮件的文本内容，true表示文本以html格式打开
             String OKString = redisDao.putCode(email, code);
             if ("OK".equals(OKString)) {
                 javaMailSender.send(mMessage);//发送邮件

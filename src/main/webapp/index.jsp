@@ -16,7 +16,6 @@
         body {
             padding-top: 10px;
             padding-bottom: 40px;
-            background-color: #F8F8FF;
             font-family: microsoft yahei;
         }
     </style>
@@ -26,7 +25,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <div class="blog"><strong>Jax的博客</strong></div>
+            <div class="blog"><strong>钟智强的博客</strong></div>
         </div>
         <div class="col-md-8">
             <iframe style="float:right" width="420" scrolling="no" height="60" frameborder="0"
@@ -224,7 +223,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="footer" align="center" style="padding-top: 120px">
-                <font>Copyright © 2019-2020 Jax的个人博客系统 版权所有</font>
+                <font>Copyright © 2019-2020 钟智强的个人博客系统 版权所有</font>
 
             </div>
         </div>

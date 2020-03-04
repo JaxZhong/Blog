@@ -72,10 +72,10 @@
 				</c:choose>
 			</div>
 			<div style="float:right;">
-				发布于：『
+				发布于：
 				<fmt:formatDate value="${blog.releaseDate }" type="date"
 					pattern="yyyy-MM-dd HH:mm" />
-				』&nbsp;&nbsp; 博客类别：<a
+				&nbsp;&nbsp; 博客类别：<a
 					href="${pageContext.request.contextPath}/index.html?typeId=${blog.blogType.id }">${blog.blogType.typeName }</a>&nbsp;&nbsp;
 				阅读(${blog.clickHit })&nbsp;&nbsp; 评论(${blog.replyHit })
 			</div>
@@ -83,7 +83,7 @@
 		<br><br>
 		<div class="xian" style="clear:both; margin:0 auto; border-top:1px solid #ddd"></div>
 		<div style="line-height:3; background-color: #F8F8FF">
-			<font style="color:#8B2323">作者：Jax&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尊重博主原创文章，转载请注明文章出于此处。</font>
+			<font style="color:#8B2323">作者：钟智强&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尊重博主原创文章，转载请注明文章出于此处。</font>
 		</div>
 		<div class="xian" style="margin:0px auto; border-top:1px solid #ddd"></div>
 		<div class="blog_content">${blog.content }</div>
