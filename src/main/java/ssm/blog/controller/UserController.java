@@ -81,11 +81,8 @@ public class UserController {
         JSONObject result = new JSONObject();
 
         String email = user.getEmail();
-        String password = user.getPassword();
-        String newPassword = CryptographyUtil.md5(password, "javacoder");
         int count = 0;
         if (verCode.equals(redisDao.getCode(email))){
-            user.setPassword(newPassword);
             Integer integer = userService.addUser(user);
             redisDao.loseCode(email);
             if (integer != null){

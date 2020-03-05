@@ -11,7 +11,7 @@
 	</div>
 	<div class="nickName"><strong><font style="color: #EE6A50">昵称：${blogger.nickname }</font></strong></div>
 	<%-- <div class="visitNum">访问量：6666</div>  --%>
-	<div class="userSign">『<strong><font style="color: #EE6A50">${blogger.sign }</font></strong>』</div>
+	<div class="userSign"><strong><font style="color: #EE6A50">签名：${blogger.sign }</font></strong></div>
 </div>
 
 <div class="data_list">

@@ -91,10 +91,10 @@
   
 <body class="easyui-layout">
 <div region="north" style="height: 78px; background-color: #E0ECFF">
-	<table style="padding: 5px" width="100%">
+	<table style="padding: 2px" width="100%">
 		<tr>
 			<td width="50%">
-				<h2>博客后台系统</h2>
+				<h1><font color="#95B8E7">博客后台系统</font></h1>
 			</td>
 			<td valign="bottom" align="right" width="50%">
 				<font size="3">&nbsp;&nbsp;<strong>欢迎：</strong>${currentUser.username }</font>
@@ -105,7 +105,7 @@
 <div region="center">
 	<div class="easyui-tabs" fit="true" border="false" id="tabs">
 		<div title="首页" data-options="iconCls:'icon-home'">
-			<div align="center" style="padding-top: 100px"><font color="red" size="10">欢迎使用</font></div>
+			<div align="center" style="padding-top: 300px"><font color="#95B8E7" size="10">欢迎使用</font></div>
 		</div>
 	</div>
 </div>
@@ -120,7 +120,10 @@
 			<a href="javascript:openTab('博客信息管理','blogManage.jsp','icon-bkgl')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-bkgl'" style="width: 150px;">博客信息管理</a>
 		</div>
 		<div title="博客类别管理" data-options="iconCls:'icon-bklb'" style="padding:10px">
-				<a href="javascript:openTab('博客类别信息管理','blogTypeManage.jsp','icon-bklb')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-bklb'" style="width: 150px;">博客类别信息管理</a>
+			<a href="javascript:openTab('博客类别信息管理','blogTypeManage.jsp','icon-bklb')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-bklb'" style="width: 150px;">博客类别信息管理</a>
+		</div>
+		<div title="用户管理"  data-options="iconCls:'icon-grxx'" style="padding:10px">
+			<a href="javascript:openTab('用户管理','userManage.jsp','icon-review')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-review'" style="width: 150px">用户管理</a>
 		</div>
 		<div title="评论管理"  data-options="iconCls:'icon-plgl'" style="padding:10px">
 			<a href="javascript:openTab('评论审核','commentReview.jsp','icon-review')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-review'" style="width: 150px">评论审核</a>
