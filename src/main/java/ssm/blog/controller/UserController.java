@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import ssm.blog.dao.redis.RedisDao;
 import ssm.blog.entity.User;
 import ssm.blog.service.UserService;
+import ssm.blog.util.CryptographyUtil;
 import ssm.blog.util.ResponseUtil;
 
 import javax.mail.MessagingException;
@@ -47,7 +48,9 @@ public class UserController {
 
         User user1 = userService.FindByEmail(email);
 
-        if(null != user1 && user1.getPassword().equals(user.getPassword())){
+        String newPassword = CryptographyUtil.md5(user.getPassword(), "javacoder");
+
+        if(null != user1 && user1.getPassword().equals(newPassword)){
 
             session.setAttribute("CurrentUser",user1);
             return "redirect:/a.jsp";
@@ -78,8 +81,11 @@ public class UserController {
         JSONObject result = new JSONObject();
 
         String email = user.getEmail();
+        String password = user.getPassword();
+        String newPassword = CryptographyUtil.md5(password, "javacoder");
         int count = 0;
         if (verCode.equals(redisDao.getCode(email))){
+            user.setPassword(newPassword);
             Integer integer = userService.addUser(user);
             redisDao.loseCode(email);
             if (integer != null){
