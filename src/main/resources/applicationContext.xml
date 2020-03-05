@@ -128,6 +128,7 @@
 		<constructor-arg name="host" value="${redis_host}"></constructor-arg>
 		<constructor-arg name="port" value="${redis_port}"></constructor-arg>
 		<constructor-arg name="timeout" value="${redis_timeout}"></constructor-arg>
+		<constructor-arg name="password" value="${redis_password}"></constructor-arg>
 	</bean>
 
 	<!-- 配置事务通知属性 -->
